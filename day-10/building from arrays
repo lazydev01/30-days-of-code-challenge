@@ -1,0 +1,6 @@
+n = int(input())
+lst = list(map(int,input().split()))
+lst_2 = []
+for i in range(len(lst)):
+    lst_2.append(lst[lst[i]])
+print(*lst_2)
