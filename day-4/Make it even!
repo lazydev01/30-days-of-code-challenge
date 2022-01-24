@@ -1,0 +1,7 @@
+n = int(input())
+lst = map(int, input().split(" ",n-1))
+count=0
+for item in lst:
+    if(len(str(item))%2 ==0):
+        count+=1
+print(count)
