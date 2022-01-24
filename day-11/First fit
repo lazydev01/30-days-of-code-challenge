@@ -1,0 +1,11 @@
+n = int(input())
+lst = list(map(int,input().split()))
+target = int(input())
+bool = False
+for i in range(len(lst)):
+    if(lst[i]>target):
+        print(lst[i])
+        bool = True
+        break
+if(bool==False):
+    print("-1")
