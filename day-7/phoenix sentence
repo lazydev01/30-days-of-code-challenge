@@ -1,0 +1,7 @@
+str = input()
+lst_of_str = list(str)
+set_of_lst_of_str = set(str)
+if(len(set_of_lst_of_str)==26):
+    print("true")
+else:
+    print("false")
