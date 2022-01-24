@@ -1,0 +1,9 @@
+n = int(input())
+lst = list(map(int, input().split(" ")))
+target = int(input())
+if target in lst:
+    print(lst.index(target))
+else:
+    lst.append(target)
+    lst.sort()
+    print(lst.index(target))
