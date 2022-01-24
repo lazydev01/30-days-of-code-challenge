@@ -1,0 +1,14 @@
+n = int(input())
+binary = bin(n)
+count = binary.count("1")
+print(count)
+
+
+
+
+
+
+
+
+
+
