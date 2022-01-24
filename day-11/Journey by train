@@ -1,0 +1,27 @@
+n = int(input())
+a = []
+
+final_answer = []
+for item in range(n):
+    lst = list(map(int, input().split()))
+    first = lst[0]
+    last = lst[1]
+    seat = lst[2]
+    zero = [0]*(lst[0]-1)
+    for i in range(first,last+1):
+        zero.append(seat)
+    a.append(zero)
+
+train = int(input())
+for item in a:
+    for i in range(train-len(item)):
+        item.append(0)
+
+for item in range(train):
+    answer = 0
+    for i in range(n):
+        answer = answer + a[i][item]
+
+    final_answer.append(answer)
+
+print(*final_answer)
