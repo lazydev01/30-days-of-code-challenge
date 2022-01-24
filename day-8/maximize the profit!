@@ -1,0 +1,10 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+minimum = min(lst)
+min_index = lst.index(minimum)
+sliced_lst = lst[min_index:]
+max_sliced_lst = max(sliced_lst)
+if(max_sliced_lst>=minimum):
+    print(max_sliced_lst-minimum)
+else:
+    print(0)
