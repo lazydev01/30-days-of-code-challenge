@@ -1,0 +1,10 @@
+class Solution:
+   def solve(self, s):
+      answer = 0
+      for c in map(int, s):
+         answer = 3 * answer + c
+      return answer
+object = Solution()
+str1 = input()
+final_answer = object.solve(str1)
+print(final_answer)
