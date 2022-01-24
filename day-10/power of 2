@@ -1,0 +1,17 @@
+import math
+def log(x):
+    if x == 0:
+        return False
+    
+    return (math.log10(x) /
+                math.log10(2))
+# G4G
+
+def isPowerOfTwo(n):
+    return (math.ceil(log(n)) ==
+            math.floor(log(n)))
+n = int(input())
+if(isPowerOfTwo(n)):
+    print("true")
+else:
+    print("false")
