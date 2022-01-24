@@ -1,0 +1,11 @@
+n = int(input())
+
+lst = list(map(int, input().split()))
+bool = False
+for i in range(len(lst)):
+    if(lst[i]==i):
+        print(i)
+        bool = True
+        break
+if bool == False:
+    print(-1)
