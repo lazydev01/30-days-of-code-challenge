@@ -1,0 +1,7 @@
+n = int(input())
+lst = list(map(int,input().split()))
+answer_lst = []
+for i in range(len(lst)):
+    if((i==0 and lst[i]>lst[i+1]) or (lst[i]>lst[i-1] and i==n-1) or (lst[i-1]<lst[i]>lst[i+1])):
+        answer_lst.append(i)
+print(*answer_lst)
