@@ -1,0 +1,9 @@
+n, k = map(int, input().split(" ", 1))
+lst = list(map(int, input().split(" ",n-1)))
+set_of_lst = set(lst)
+count = 0
+for item in set_of_lst:
+    floor_ans = n//k
+    if(lst.count(item)==floor_ans):
+        count+=1
+print(count)
