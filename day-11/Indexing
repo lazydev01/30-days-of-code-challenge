@@ -1,0 +1,14 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+bool = False
+for i in range(len(lst)-1):
+    start = lst[:i]
+    stop = lst[i+1:]
+    if(sum(start)==sum(stop)):
+        bool = True
+        k = i
+        break
+if bool:
+    print(k)
+else:
+    print(-1)
