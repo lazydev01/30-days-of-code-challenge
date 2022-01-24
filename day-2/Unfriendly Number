@@ -1,0 +1,8 @@
+num = input()
+list_of_num = list(num)
+int_of_num = list(map(int, list_of_num))
+set_of_list_of_num = set(int_of_num)
+if(len(list_of_num)== len(set_of_list_of_num)):
+    print("The number is lucky.")
+else:
+    print("The number is unlucky.")
