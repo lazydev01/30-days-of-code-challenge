@@ -1,0 +1,5 @@
+str1 = input()
+words = str1.split(" ")
+words.reverse()
+str2 = ' '.join(words)
+print(str2)
