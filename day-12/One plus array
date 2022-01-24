@@ -1,0 +1,7 @@
+n = int(input())
+lst = list(map(int,input().split()))
+str_of_lst =[str(item) for item in lst]
+str1 = "". join(str_of_lst)
+num = int(str1) + 1
+final_answer = list(str(num))
+print(*final_answer)
