@@ -1,0 +1,20 @@
+m = int(input())
+n = int(input())
+length = int(input())
+indices = list(map(int,input().split()))
+indexes = []
+for i in range(len(indices)-2):
+    row_col = indices[i:i+4:2]
+    indexes.append(row_col)
+zero_array=[[0]*n for _ in range(m)]
+for row,col in indexes:
+    for i in range(n):
+        zero_array[row][i]+=1
+    for i in range(m):
+        zero_array[i][col]+=1
+final_ans = sum(1 for i in range(m) for j in range(n) if zero_array[i][j]%2!=0)
+print(final_ans)
+
+
+
+
