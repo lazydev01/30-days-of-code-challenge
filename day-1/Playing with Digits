@@ -1,0 +1,9 @@
+import functools
+n = int(input())
+num = input()
+list_of_num = list(num)
+integer_of_list  = list(map(int, list_of_num))
+sum_of_number = sum(integer_of_list)
+product_of_number = functools.reduce(lambda x,y:x*y, integer_of_list)
+final_answer = abs(product_of_number - sum_of_number)
+print(final_answer)
