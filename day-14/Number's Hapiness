@@ -1,0 +1,28 @@
+def sumofDigitofSquare(num):
+    s = 0
+    while (num != 0):
+        digit = num % 10
+        s += digit * digit
+        num = num // 10
+
+    return s
+
+def Happy(num):
+    set_num=set()
+    set_num.add(num)
+    while (True):
+
+        if (num == 1):
+            return True
+        num = sumofDigitofSquare(num)
+
+
+        if num in set_num:
+            return False
+        set_num.add(num)
+
+n = int(input())
+if(Happy(n)):
+    print("true")
+else:
+    print("false")
