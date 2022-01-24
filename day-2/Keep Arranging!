@@ -1,0 +1,9 @@
+def Harmonic(num):
+    if num == 1:
+        return 1
+    else:
+        return Harmonic(num-1)+(1/num)
+num = int(input())
+harmonic_number = Harmonic(num)
+final_answer = "{:.4f}".format(harmonic_number)
+print("Harmonic sum upto 4 decimal places:", final_answer)
