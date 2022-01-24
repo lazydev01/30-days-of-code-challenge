@@ -1,0 +1,9 @@
+coins = int(input())
+count = 0
+i=1
+while(coins>=0):
+    coins-=i
+    i+=1
+    count+=1
+print(count-1)
+
