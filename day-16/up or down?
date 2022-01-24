@@ -1,0 +1,10 @@
+n = int(input())
+lst_of_lst = []
+for i in range(n):
+    lst = list(map(int,input().split()))
+    lst.reverse()
+    for i in range(len(lst)):
+        lst[i] = 0 if lst[i] else 1
+    lst_of_lst.append(lst)
+for item in lst_of_lst:
+    print(*item)
