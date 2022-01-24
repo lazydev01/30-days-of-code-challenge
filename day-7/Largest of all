@@ -1,0 +1,9 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+first_max = max(lst)
+lst.remove(first_max)
+second_max = max(lst)
+if(first_max> 2 * second_max):
+    print("true")
+else:
+    print("false")
