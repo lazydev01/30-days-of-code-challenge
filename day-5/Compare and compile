@@ -1,0 +1,10 @@
+n = int(input())
+string_n = str(n)
+rev_string_n = string_n[::-1]
+square = n*n
+string_square = str(square)
+rev_string_square = string_square[::-1]
+if(rev_string_square.startswith(rev_string_n)):
+    print("Phoenix number")
+else:
+    print("Not a phoenix number.")
