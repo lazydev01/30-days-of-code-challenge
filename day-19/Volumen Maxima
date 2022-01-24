@@ -1,0 +1,10 @@
+n = int(input())
+lst = list(map(int,input().split()))
+area_lst = []
+for i in range(len(lst)):
+    for j in range(i,len(lst)):
+        height = min(lst[i],lst[j])
+        width = j-i
+        area = height*width
+        area_lst.append(area)
+print(max(area_lst))
