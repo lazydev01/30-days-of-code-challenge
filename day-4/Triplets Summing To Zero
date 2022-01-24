@@ -1,0 +1,13 @@
+import itertools
+n = int(input())
+lst = map(int, input().split(" ",n-1))
+combinations = list(itertools.combinations(lst,3))
+b = False
+for item in combinations:
+    sum_combinations = sum(item)
+    if sum_combinations == 0:
+        print("true")
+        b = True
+        break
+if b == False:
+    print("false")
