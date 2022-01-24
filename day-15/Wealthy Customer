@@ -1,0 +1,8 @@
+m = int(input())
+n = int(input())
+new_lst = []
+for _ in range(m):
+    lst = list(map(int, input().split(" ")))
+    sum_lst = sum(lst)
+    new_lst.append(sum_lst)
+print(max(new_lst))
