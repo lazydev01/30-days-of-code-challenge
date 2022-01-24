@@ -1,0 +1,7 @@
+n, m = map(int,input().split())
+arr_a = list(map(int,input().split()))
+arr_b = list(map(int,input().split()))
+set_of_arr_a = set(arr_a)
+set_of_arr_b = set(arr_b)
+final_answer = set_of_arr_a.union(set_of_arr_b)
+print(len(final_answer))
