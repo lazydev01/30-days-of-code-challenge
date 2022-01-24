@@ -1,0 +1,13 @@
+def getSum(n):
+    sum = 0
+    for digit in str(n):
+        sum += int(digit)
+    return sum
+n = int(input())
+list_of_numbers = []
+for i in range(100000):
+  sum_1 = getSum(i)
+  if(sum_1==11):
+      list_of_numbers.append(i)
+final_answer = list_of_numbers[n-1]
+print(final_answer)
