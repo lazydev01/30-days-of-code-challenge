@@ -1,0 +1,8 @@
+length = int(input())
+lst = list(map(str, input().split(" ", length-1)))
+k = int(input())
+str1 = "".join(lst)
+int_str1 = int(str1)
+answer = int_str1 + k
+final_answer_lst = list(str(answer))
+print(*final_answer_lst)
