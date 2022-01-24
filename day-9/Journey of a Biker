@@ -1,0 +1,11 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+final_lst = []
+sum = lst[0]
+for i in range(len(lst)-1):
+    sum = sum + lst[i+1]
+    final_lst.append(sum)
+if(max(final_lst)>=0):
+    print(max(final_lst))
+else:
+    print(0)
