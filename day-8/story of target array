@@ -1,0 +1,19 @@
+import sys
+
+data = []
+for line in sys.stdin:
+    data.append(line.rstrip("\n"))
+
+flat_inputs = []
+for line in data:
+    flat_inputs.extend(list(map(int, line.split())))
+
+n = flat_inputs[0]
+x = flat_inputs[1]
+vals = flat_inputs[2:n + 2]
+indices = flat_inputs[n + 2:2 * n + 2]
+
+final_lst = []
+for item in range(n):
+    final_lst.insert(indices[item], vals[item])
+print(*final_lst)
