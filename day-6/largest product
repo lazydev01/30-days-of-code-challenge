@@ -1,0 +1,26 @@
+n = int(input())
+lst = list(map(int,input().split(" ", n-1)))
+first_max = max(lst)
+lst.remove(first_max)
+second_max = max(lst)
+first_min = min(lst)
+lst.remove(first_min)
+second_min = min(lst)
+min_prod = first_min*second_min
+max_prod = first_max*second_max
+if(min_prod>max_prod):
+    print(min_prod)
+else:
+    print(max_prod)
+        
+        
+        
+
+
+
+
+
+
+
+
+
