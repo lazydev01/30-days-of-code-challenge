@@ -1,0 +1,9 @@
+n = int(input())
+lst = list(map(int, input().split(" ")))
+first_lst = lst[:n]
+second_lst = lst[n:]
+final_lst = []
+for i in range(n):
+    final_lst.append(first_lst[i])
+    final_lst.append(second_lst[i])
+print(*final_lst)
