@@ -1,0 +1,8 @@
+n = int(input())
+lst = map(int, input().split(" ",n-1))
+sum = 0
+answer_lst = []
+for item in lst:
+    sum+=item
+    answer_lst.append(sum)
+print(*answer_lst)
