@@ -1,0 +1,27 @@
+n = int(input())
+matrix = []
+lst = []
+boolean = False
+for i in range(n):
+    lst.append(i+1)
+    matrix.append(list(map(int,input().split())))
+set_of_lst = set(lst)
+for item in matrix:
+    set_of_item = set(item)
+    if(len(set_of_item)==len(set_of_lst)):
+        boolean = True
+    else:
+        boolean = False
+        break
+transposed_matrix = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+for item in transposed_matrix:
+    set_of_item = set(item)
+    if (len(set_of_item) == len(set_of_lst)):
+        boolean = True
+    else:
+        boolean = False
+        break
+if(boolean):
+    print("true")
+else:
+    print("false")
