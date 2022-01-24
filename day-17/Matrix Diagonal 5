@@ -1,0 +1,17 @@
+n = int(input())
+lst_of_lst = []
+answer = 0
+for i in range(n):
+    lst = list(map(int,input().split()))
+    lst_of_lst.append(lst)
+for i in range(n):
+    for j in range(n):
+        if(i==j):
+            answer += lst_of_lst[i][j]
+for i in range(n):
+    for j in range(n):
+        if((i+j)==(n-1)):
+            answer += lst_of_lst[i][j]
+if(n%2!=0):
+    answer -= lst_of_lst[n//2][n//2]
+print(answer)
