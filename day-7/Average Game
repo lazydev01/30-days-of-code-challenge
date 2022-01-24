@@ -1,0 +1,10 @@
+n = int(input())
+k = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+temp = k *(n-1)
+sum_lst = sum(lst)
+var = sum_lst - temp
+if var in lst:
+    print("true")
+else:
+    print("false")
