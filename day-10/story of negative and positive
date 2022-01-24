@@ -1,0 +1,13 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+lst_2 = []
+for item in lst:
+    if (-item in lst):
+        lst_2.append(item)
+if(lst_2 == []):
+    print(-1)
+else:
+    print(max(lst_2))
+
+
+
