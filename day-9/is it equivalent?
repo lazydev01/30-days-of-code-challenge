@@ -1,0 +1,12 @@
+n = int(input())
+lst = list(map(int, input().split(" ", n-1)))
+set_of_lst = set(lst)
+bool = False
+for item in set_of_lst:
+    count = lst.count(item)
+    if count==item:
+        bool = True
+if(bool):
+    print("true")
+else:
+    print("false")
