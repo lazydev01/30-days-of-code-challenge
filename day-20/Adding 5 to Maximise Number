@@ -1,0 +1,10 @@
+n = int(input())
+lst_n = list(str(n))
+if((lst_n[0])=='-'):
+    lst_n.append('5')
+elif(int(lst_n[0])>=5):
+    lst_n.insert(1, '5')
+else:
+    lst_n.insert(0, '5')
+answer_n = ''.join(lst_n)
+print(int(answer_n))
