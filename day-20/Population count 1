@@ -1,0 +1,19 @@
+n = int(input())
+matrix = []
+for i in range(n):
+    matrix.append(list(map(int,input().split())))
+lst = []
+for birth,death in matrix:
+    lst.append((birth,1))
+    lst.append((death,-1))
+lst.sort(key=lambda x:x[0])
+alive_in_particular_year = 0
+year_dict = dict()
+for year, pop in lst:
+    alive_in_particular_year = alive_in_particular_year + pop
+    year_dict[year] = alive_in_particular_year
+max_pop_value = max(year_dict.values())
+for year, pop_element in year_dict.items():
+    if(pop_element==max_pop_value):
+        print(year)
+        break
