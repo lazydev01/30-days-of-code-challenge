@@ -1,0 +1,24 @@
+n = int(input())
+lst = list(input().split())
+deliveries = []
+boolean = False
+boolean_2 = True
+for item in lst:
+    if("P" in item):
+        deliveries.append(item)
+    elif("D" in item):
+        item = list(item)
+        item[0]="P"
+        str1 = "".join(item)
+        if(str1 not in deliveries):
+            boolean_2 = False
+            break
+        else:
+            deliveries.remove(str1)
+
+if(len(deliveries)==0):
+    boolean = True
+if(boolean and boolean_2):
+    print("true")
+else:
+    print("false")
