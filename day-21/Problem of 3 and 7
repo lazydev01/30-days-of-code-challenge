@@ -1,0 +1,12 @@
+n = int(input())
+bool = False
+for i in range(0,n+1,7):
+         if (n-i)%3 == 0:
+            bool = True
+            break
+         else:
+            bool = False
+if(bool):
+    print("true")
+else:
+    print("false")
