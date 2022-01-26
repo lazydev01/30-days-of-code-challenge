@@ -1,0 +1,13 @@
+n = int(input())
+lst = list(map(int,input().split()))
+answer = 0
+lst.sort()
+c = 0
+for i in range(n - 1, -1, -1):
+    new_item = lst[i] + n - i
+    if new_item > c:
+        c = new_item
+for j in lst:
+    if j + n >= c:
+        answer += 1
+print(answer)
