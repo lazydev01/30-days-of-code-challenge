@@ -1,0 +1,22 @@
+n = int(input())
+m = int(input())
+matrix = []
+for i in range(n):
+    lst = list(map(int,input().split()))
+    matrix.append(lst)
+row_list = []
+column_list = []
+final_answer = []
+for item in matrix:
+    minimum = min(item)
+    row_list.append(minimum)
+matrix = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+for item in matrix:
+    maximum = max(item)
+    column_list.append(maximum)
+
+for i in range(n):
+    for j in range(m):
+        if(row_list[i]==column_list[j]):
+            final_answer.append(row_list[i])
+print(*final_answer)
