@@ -1,0 +1,22 @@
+letters = input()
+n = int(input())
+words_string = input()
+words = words_string.split(" ")
+dict_letters = {}
+
+for char in letters:
+    dict_letters[char] = letters.count(char)
+ans_lst = []
+for item in words:
+    dict_words = {}
+    for i in item:
+        dict_words[i] = item.count(i)
+    if(dict_words.items()<=dict_letters.items()):
+        ans_lst.append(item)
+count_lst = []
+for item in ans_lst:
+    count_lst.append(len(item))
+if count_lst == []:
+    print(0)
+else:
+    print(max(count_lst))
