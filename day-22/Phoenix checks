@@ -1,0 +1,14 @@
+def Convert(string):
+    a=[]
+    a[:0]=string
+    return a
+str1 = input()
+str2 = input()
+lst = Convert(str1)
+lst2 = Convert(str2)
+lst.sort()
+lst2.sort()
+if(lst==lst2):
+    print("true")
+else:
+    print("false")
