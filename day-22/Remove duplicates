@@ -1,0 +1,9 @@
+n = int(input())
+lst = list(map(int,input().split(" ")))
+answer_lst = []
+for item in lst:
+    if item not in answer_lst:
+        answer_lst.append(item)
+    else:
+        answer_lst.remove(item)
+print(*answer_lst)
