@@ -1,0 +1,19 @@
+n = int(input())
+m = int(input())
+matrix = []
+bool = True
+for i in range(n):
+    lst = list(map(int,input().split()))
+    matrix.append(lst)
+i = 0
+j = 0
+element = matrix[i][j]
+while(i<n and j<m):
+    if(matrix[i][j]!=element):
+        bool = False
+    i+=1
+    j+=1
+if(bool):
+    print("true")
+else:
+    print("false")
