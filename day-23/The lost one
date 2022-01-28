@@ -1,0 +1,7 @@
+n = int(input())
+lst = list(map(int, input().split(" ")))
+for i in range(n+1):
+    if i not in lst:
+        temp = i
+        break
+print(temp)
