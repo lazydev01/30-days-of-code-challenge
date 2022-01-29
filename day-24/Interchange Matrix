@@ -1,0 +1,10 @@
+m = int(input())
+n = int(input())
+matrix = []
+for i in range(m):
+    lst = list(map(int, input().split()))
+    matrix.append(lst)
+result = [[matrix[j][i] for j in range(m)] for i in range(n)]
+for item in result:
+    print(*item)
+
