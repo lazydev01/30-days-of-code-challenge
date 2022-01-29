@@ -1,0 +1,16 @@
+n = int(input())
+matrix = []
+for i in range(n):
+    str1 = input()
+    lst = list(str1)
+    matrix.append(lst)
+
+result_lst = [[] for j in range(max(len(i) for i in matrix))]
+
+for item in matrix:
+    for x, res in zip(item, result_lst):
+        res.append(x)
+if(matrix==result_lst):
+    print("true")
+else:
+    print("false")
