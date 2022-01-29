@@ -1,0 +1,11 @@
+n = int(input())
+lst = list(map(int, input().split()))
+minimum = 0
+sum1 = 0
+for i in range(len(lst)):
+    sum1 += lst[i]
+    minimum = min(minimum, sum1)
+
+final_answer = 1 - minimum
+
+print(final_answer)
