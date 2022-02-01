@@ -1,0 +1,11 @@
+n = int(input())
+lst = list(map(int,input().split()))
+lst2 = list(set(lst))
+lst2.sort(reverse=True)
+dic = {}
+for i in range(len(lst2)):
+    dic[lst2[i]] = i
+final_answer = []
+for item in lst:
+    final_answer.append(dic[item])
+print(*final_answer)
