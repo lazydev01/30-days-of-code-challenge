@@ -1,0 +1,16 @@
+n = int(input())
+lst = list(map(int, input().split()))
+set_lst = set(lst)
+bool = False
+new_lst = []
+for item in set_lst:
+    count = lst.count(item)
+    if count not in new_lst:
+        new_lst.append(count)
+    else:
+        bool = True
+        break
+if bool==False:
+    print("true")
+else:
+    print("false")
