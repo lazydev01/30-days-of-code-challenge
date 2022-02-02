@@ -1,0 +1,15 @@
+hours = int(input())
+minutes = int(input())
+if (hours == 12):
+    hours = 0
+if (minutes == 60):
+    minutes = 0
+    hours += 1
+    if (hours > 12):
+        hours = hours - 12
+hour = hours*60/2 + minutes/2
+minute = 6*minutes
+angle = int(abs(hour-minute))
+angle = min(360-angle, angle)
+final_answer = angle//1
+print(final_answer)
