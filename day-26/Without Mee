@@ -1,0 +1,12 @@
+n = int(input())
+lst = list(map(int,input().split()))
+copy_lst = lst.copy()
+answer_lst = []
+for i in range(len(lst)):
+    copy_lst.remove(lst[i])
+    count = 1
+    for j in range(len(copy_lst)):
+        count = count * copy_lst[j]
+    answer_lst.append(count)
+    copy_lst.insert(i,lst[i])
+print(*answer_lst)
