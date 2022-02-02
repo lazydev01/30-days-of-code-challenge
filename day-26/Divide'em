@@ -1,0 +1,6 @@
+from functools import reduce
+import math
+n = int(input())
+lst = list(map(int,input().split()))
+final_answer = reduce(math.gcd, lst)
+print(final_answer)
