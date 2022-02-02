@@ -1,0 +1,17 @@
+n = int(input())
+k = int(input())
+lst = list(map(int,input().split()))
+
+dict1 = {}
+count = 0
+for item in lst:
+    if item not in dict1:
+        pass
+    else:
+        if count - dict1[item]<k:
+            count=k+dict1[item]
+        
+    count+=1
+    dict1[item]=count
+        
+print(count)
