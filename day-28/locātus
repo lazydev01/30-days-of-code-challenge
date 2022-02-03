@@ -1,0 +1,13 @@
+n = int(input())
+target = int(input())
+lst = list(map(int, input().split(" ")))
+if target not in lst:
+    print("-1 -1")
+else:
+    start = lst.index(target)
+    lst.reverse()
+    stop = lst.index(target)
+    new_lst = []
+    new_lst.append(start)
+    new_lst.append(n-1-stop)
+    print(*new_lst)
