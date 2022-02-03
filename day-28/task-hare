@@ -1,0 +1,19 @@
+m = int(input())
+n = int(input())
+tasks = list(map(int,input().split()))
+people = list(map(int,input().split()))
+tasks.sort()
+people.sort()
+ans = 0
+i = 0
+j = 0
+while i<m:
+    while j<n:
+        if(people[j]>=tasks[i]):
+            ans+=1
+            j+=1
+            i+=1
+        else:
+            j+=1
+    i+=1
+print(ans)
