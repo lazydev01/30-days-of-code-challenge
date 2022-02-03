@@ -1,0 +1,13 @@
+char = input()
+n = int(input())
+str1 = input()
+lst = []
+lst[:0] = str1
+bool = False
+for i in range(len(lst)):
+    if(lst[i]>char):
+        bool = True
+        print(lst[i])
+        break
+if(bool == False):
+    print(lst[0])
