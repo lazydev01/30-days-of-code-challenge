@@ -1,0 +1,12 @@
+m = int(input())
+n = int(input())
+k = int(input())
+lst_of_lst = []
+for i in range(m):
+    lst = list(map(int, input().split()))
+    lst_of_lst.extend(lst)
+lst_of_lst.sort()
+if k==0:
+    print(lst_of_lst[0])
+else:
+    print(lst_of_lst[k])
