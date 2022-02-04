@@ -1,0 +1,8 @@
+n = int(input())
+lst = list(map(int, input().split()))
+count = lst.count(0)
+for i in range(count):
+    lst.remove(0)
+for i in range(count):
+    lst.append(0)
+print(*lst)
