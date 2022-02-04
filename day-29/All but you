@@ -1,0 +1,11 @@
+n = int(input())
+lst = list(map(int, input().split()))
+minimum = min(lst)
+maximum = max(lst)
+mini_count = lst.count(minimum)
+maxi_count = lst.count(maximum)
+set_lst = set(lst)
+if len(set_lst)==1:
+    print(0)
+else:
+    print(n - mini_count - maxi_count)
