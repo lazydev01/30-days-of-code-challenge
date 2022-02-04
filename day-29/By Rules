@@ -1,0 +1,17 @@
+ruleKey = input()
+ruleValue = input()
+n = int(input())
+count = 0
+for _ in range(n):
+    str1 = input()
+    lst = str1.split(" ")
+    if ruleKey == "type":
+        if ruleValue == lst[0]:
+            count+=1
+    elif ruleKey == "color":
+        if ruleValue == lst[1]:
+            count+=1
+    else:
+        if ruleValue == lst[2]:
+            count+=1
+print(count)
