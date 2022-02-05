@@ -1,0 +1,13 @@
+n = int(input())
+lst = list(map(int, input().split()))
+lst.sort()
+bool = False
+for i in range(n):
+    for j in range(i+1, n):
+        if lst[j] == 2*lst[i]:
+            bool = True
+            break
+if bool:
+    print("true")
+else:
+    print("false")
