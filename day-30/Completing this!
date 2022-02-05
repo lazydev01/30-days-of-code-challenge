@@ -1,0 +1,7 @@
+n = int(input())
+lst = list(map(int, input().split()))
+odd_lst = lst[::2]
+even_lst = lst[1::2]
+sum_odd = sum(odd_lst)
+sum_even = sum(even_lst)
+print(max(sum_odd, sum_even))
